@@ -54,7 +54,7 @@ jobs:
         run: |
           set -e -o pipefail
           ./cruelbuild config                    \
-                       model=${{ matrix.model }} \
+                       model=${{ N971N }}       \
                        name="SantiCruel"        \
                        toolchain=$TOOLCHAIN        \
                        +magisk                   \
