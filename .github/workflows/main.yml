@@ -56,7 +56,7 @@ jobs:
           ./cruelbuild config                    \
                        model=${{ matrix.model }} \
                        name="SantiCruel"        \
-                       toolchain=$TOOLCHAIN      \
+                       toolchain=$TOOLCHAIN        \
                        +magisk                   \
                        +nohardening              \
                        +ttl                      \
