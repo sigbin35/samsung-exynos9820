@@ -54,7 +54,7 @@ jobs:
         run: |
           set -e -o pipefail
           ./cruelbuild config                    \
-                       model=${{ N971N }}       \
+                       model=${{ matrix.model }}       \
                        name="SantiCruel"        \
                        toolchain=$TOOLCHAIN        \
                        +magisk                   \
@@ -68,6 +68,8 @@ jobs:
                        +morosound                \
                        +boeffla_wl_blocker       \
                        +kali                     \
+                       +dtb                      \
+                       +dtbo                     \
           2>&1 | tee config.info
 
       - name: Install gcc-aarch64-linux-gnu
